@@ -1,8 +1,15 @@
 {
 	"name": "keyhole",
-	"private": true,
+	"description": "A minimal wrapper of the keyhole tracker API",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"version": "0.5.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pkakelas/keyhole-client.git"
+	},
+	"keywords": ["keyhole", "typescript", "marketing", "hashtag", "tracking", "social", "media"],
+	"author": "Dimitris Lamprinos <pkakelas@gmail.com>",
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
