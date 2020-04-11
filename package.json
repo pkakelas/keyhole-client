@@ -1,0 +1,17 @@
+{
+	"name": "keyhole",
+	"private": true,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run build"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.16",
+		"typescript": "^3.7.3"
+	},
+	"dependencies": {
+		"axios": "^0.19.2"
+	}
+}
