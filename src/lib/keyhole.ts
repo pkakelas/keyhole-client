@@ -25,14 +25,16 @@ export default class Keyhole {
         usernames?: {[key: string]: string[]}, // key: Platform
         countryLocations: string[] = [],
         language?: string[]
-    ): Promise<void> {
-        await this.client.post('/trackers', {
+    ): Promise<Hash> {
+        const res = await this.client.post('/trackers', {
             search_terms: searchTerms.join(),
             platforms: platforms.join(),
             country_locations: countryLocations.join(),
             usernames: JSON.stringify(usernames),
             language
         })
+
+        return res.data.data.hash
     }
 
     public async startTracker(hash: Hash): Promise<void> {
