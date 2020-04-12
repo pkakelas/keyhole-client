@@ -1,3 +1,5 @@
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/pkakelas/keyhole-client/master.svg?style=flat-square)](https://codecov.io/gh/pkakelas/keyhole-client/)
+
 # keyhole-client
 
 Just a minimal 'n slick wrapper of the [keyhole API](https://apidocs.keyhole.
