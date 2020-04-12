@@ -1,5 +1,4 @@
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/pkakelas/keyhole-client/master.svg)](https://codecov.io/gh/pkakelas/keyhole-client/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/pkakelas/keyhole-client/master.svg)](https://codecov.io/gh/pkakelas/keyhole-client/) [![CircleCI](https://circleci.com/gh/pkakelas/keyhole-client.svg?style=shield)](https://circleci.com/gh/pkakelas/keyhole-client) [![npm version](https://badge.fury.io/js/keyhole-client.svg)](https://www.npmjs.com/package/keyhole-client) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # keyhole-client
 
