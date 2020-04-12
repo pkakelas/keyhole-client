@@ -1,3 +1,3 @@
 import KeyholeClient from './lib/keyhole'
 
-module.exports = (token: string) => new KeyholeClient(token)
+export default (token: string) => new KeyholeClient(token)
