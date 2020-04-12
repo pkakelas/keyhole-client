@@ -28,10 +28,11 @@ const setAccessToken = (config: AxiosRequestConfig, accessToken: string) => {
 const handleResponseErrors = (error: any) => {
     switch (error.response.status) {
         case 401:
-            throw new Error.NotAuthenticatedError()
+            throw new Error.NotAuthenticatedError('Not authenticated')
         case 404:
-            throw new Error.NotFoundError()
+            throw new Error.NotFoundError('Not found')
         case 400:
+            console.log(error.response)
             throw new Error.MissingParameterError(error.response.data.message)
         case 500:
             throw new Error.InternalServerError(error.response.data.message)
