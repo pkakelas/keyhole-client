@@ -3,23 +3,40 @@
 	"description": "A minimal wrapper of the keyhole tracker API",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"version": "0.5.0",
+	"version": "0.5.2",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/pkakelas/keyhole-client.git"
 	},
-	"keywords": ["keyhole", "typescript", "marketing", "hashtag", "tracking", "social", "media"],
+	"keywords": [
+		"keyhole",
+		"typescript",
+		"marketing",
+		"hashtag",
+		"tracking",
+		"social",
+		"media"
+	],
 	"author": "Dimitris Lamprinos <pkakelas@gmail.com>",
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
-		"start": "rm -r dist/  && npm run build && node dist/"
+		"start": "rm -r dist/  && npm run build && node dist/",
+		"test": "jest"
 	},
 	"devDependencies": {
+		"@types/jest": "^25.2.1",
 		"@types/node": "^12.12.16",
+		"axios-mock-adapter": "^1.18.1",
+		"codecov": "^3.6.5",
+		"jest": "^25.3.0",
+		"ts-jest": "^25.3.1",
 		"typescript": "^3.7.3"
 	},
 	"dependencies": {
 		"axios": "^0.19.2"
+	},
+	"jest": {
+		"collectCoverage": true
 	}
 }
