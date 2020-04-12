@@ -19,9 +19,10 @@
 	],
 	"author": "Dimitris Lamprinos <pkakelas@gmail.com>",
 	"scripts": {
-		"build": "tsc",
+		"build": "npm run clean && tsc",
 		"prepare": "npm run build",
-		"start": "rm -r dist/  && npm run build && node dist/",
+		"clean": "rm -r dist/ || true",
+		"start": "npm run clean && npm run build && node dist/",
 		"test": "jest"
 	},
 	"devDependencies": {
