@@ -32,7 +32,6 @@ const handleResponseErrors = (error: any) => {
         case 404:
             throw new Error.NotFoundError('Not found')
         case 400:
-            console.log(error.response)
             throw new Error.MissingParameterError(error.response.data.message)
         case 500:
             throw new Error.InternalServerError(error.response.data.message)

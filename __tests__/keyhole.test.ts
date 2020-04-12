@@ -79,7 +79,6 @@ describe('Errors', () => {
         mock.onGet('/trackers/abc').replyOnce(401)
 
         return client.getTracker('abc').catch(e => {
-            console.log('test')
             expect(e.message).toEqual('Not authenticated')
         })
     })
