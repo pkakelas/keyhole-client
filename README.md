@@ -2,7 +2,7 @@
 
 # keyhole-client
 
-Just a minimal 'n slick wrapper of the [keyhole API](https://apidocs.keyhole).
+Just a minimal and slick wrapper of the [keyhole API](https://apidocs.keyhole).
 
 ### Install
 ```
