@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosError, AxiosResponse } from 'axios'
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 import * as Error from './errors'
 
 export default (accessToken: string) => {
@@ -6,8 +6,8 @@ export default (accessToken: string) => {
         baseURL: 'https://api.keyhole.co/hashtag-tracking/v2.2',
     })
 
-    instance.interceptors.request.use(config => setAccessToken(config, accessToken))
-    instance.interceptors.response.use(r => r , handleResponseErrors)
+    instance.interceptors.request.use((config: AxiosRequestConfig)  => setAccessToken(config, accessToken))
+    instance.interceptors.response.use((r: AxiosResponse) => r, handleResponseErrors)
 
     return instance
 }
