@@ -1,8 +1,9 @@
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/pkakelas/keyhole-client/master.svg?style=flat-square)](https://codecov.io/gh/pkakelas/keyhole-client/)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/pkakelas/keyhole-client/master.svg)](https://codecov.io/gh/pkakelas/keyhole-client/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 
 # keyhole-client
 
-Just a minimal 'n slick wrapper of the [keyhole API](https://apidocs.keyhole.
+Just a minimal 'n slick wrapper of the [keyhole API](https://apidocs.keyhole).
 
 ### Install
 ```
